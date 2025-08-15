@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Login Form</title>
+<style>
+/* Base reset and font */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(135deg, #6b73ff, #000dff);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Card container */
+.login-card {
+	background: #ffffff;
+	border-radius: 12px;
+	width: 320px;
+	padding: 2rem;
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+.login-card h2 {
+	margin-bottom: 1.5rem;
+	color: #333;
+	font-size: 1.5rem;
+}
+
+/* Form fields */
+.login-card .input-group {
+	margin-bottom: 1.2rem;
+	text-align: left;
+}
+
+.login-card label {
+	display: block;
+	margin-bottom: 0.3rem;
+	font-size: 0.9rem;
+	color: #555;
+}
+
+.login-card input {
+	width: 100%;
+	padding: 0.6rem 0.8rem;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	font-size: 1rem;
+	transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.login-card input:focus {
+	border-color: #6b73ff;
+	box-shadow: 0 0 6px rgba(107, 115, 255, 0.5);
+	outline: none;
+}
+
+/* Buttons */
+.login-card .btn {
+	width: 100%;
+	padding: 0.7rem;
+	margin-top: 0.8rem;
+	border: none;
+	border-radius: 6px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background 0.2s, transform 0.1s;
+}
+
+.login-card .btn-login {
+	background: #6b73ff;
+	color: #fff;
+}
+
+.login-card .btn-login:hover {
+	background: #5769e0;
+	transform: translateY(-1px);
+}
+
+.login-card .btn-signup {
+	background: transparent;
+	color: #6b73ff;
+	border: 2px solid #6b73ff;
+	margin-top: 0.5rem;
+}
+
+.login-card .btn-signup:hover {
+	background: #6b73ff;
+	color: #fff;
+}
+</style>
+</head>
+<body>
+
+	<div class="login-card">
+		<h2>Welcome Back</h2>
+		<form action="login" method="post">
+			<div class="input-group">
+				<label for="username">Username</label> <input type="text"
+					id="username" name="username" placeholder="Enter your username"
+					required />
+			</div>
+
+			<div class="input-group">
+				<label for="password">Password</label> <input type="password"
+					id="password" name="password" placeholder="••••••••" required />
+			</div>
+
+			<button type="submit" class="btn btn-login">Log In</button>
+			<button type="button" class="btn btn-signup"
+				onclick="window.location.href='SignUp.jsp';">Sign Up</button>
+		</form>
+	</div>
+
+</body>
+</html>
