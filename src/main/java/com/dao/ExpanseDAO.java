@@ -8,9 +8,9 @@ import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.hibernate.query.SelectionQuery;
 
-import com.AnotherUser;
-import com.Expanses;
 import com.connections.Utility;
+import com.model.AnotherUser;
+import com.model.Expanses;
 
 public class ExpanseDAO {
 	

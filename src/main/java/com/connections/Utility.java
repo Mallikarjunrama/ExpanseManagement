@@ -3,8 +3,8 @@ package com.connections;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import com.AnotherUser;
-import com.Expanses;
+import com.model.AnotherUser;
+import com.model.Expanses;
 
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletContextEvent;

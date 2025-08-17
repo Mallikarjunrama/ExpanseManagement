@@ -8,8 +8,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-import com.AnotherUser;
 import com.dao.UserDAO;
+import com.model.AnotherUser;
 
 @WebServlet("/signup")
 public class SignUp extends HttpServlet {

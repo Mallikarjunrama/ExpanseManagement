@@ -9,8 +9,8 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
-import com.Expanses;
 import com.dao.ExpanseDAO;
+import com.model.Expanses;
 
 @WebServlet("/getExpanse")
 public class getExpanse extends HttpServlet {

@@ -11,10 +11,10 @@ import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.time.LocalDateTime;
 
-import com.AnotherUser;
-import com.Expanses;
 import com.dao.ExpanseDAO;
 import com.dao.UserDAO;
+import com.model.AnotherUser;
+import com.model.Expanses;
 
 @WebServlet("/newexpanse")
 public class NewExpanse extends HttpServlet {

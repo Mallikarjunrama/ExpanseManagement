@@ -11,9 +11,9 @@ import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
-import com.AnotherUser;
-import com.Expanses;
 import com.dao.UserDAO;
+import com.model.AnotherUser;
+import com.model.Expanses;
 
 @WebServlet("/home")
 public class Home extends HttpServlet {
